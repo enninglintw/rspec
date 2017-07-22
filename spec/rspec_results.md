@@ -1,15 +1,11 @@
+*
 
-An error occurred while loading ./spec/models/zombie_spec.rb.
-Failure/Error:
-  describe Zombie do
-  end
+Pending: (Failures listed here are expected and do not affect your suite's status)
 
-NameError:
-  uninitialized constant Zombie
-# ./spec/models/zombie_spec.rb:1:in `<top (required)>'
-No examples found.
+  1) Zombie add some examples to (or delete) /Users/apple/Projects/rspec/spec/models/zombie_spec.rb
+     # Not yet implemented
+     # ./spec/models/zombie_spec.rb:4
 
-
-Finished in 0.00022 seconds (files took 0.14967 seconds to load)
-0 examples, 0 failures, 1 error occurred outside of examples
+Finished in 0.00653 seconds (files took 5.11 seconds to load)
+1 example, 0 failures, 1 pending
 
