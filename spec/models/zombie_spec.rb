@@ -1,0 +1,2 @@
+describe Zombie do
+end
