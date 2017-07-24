@@ -1,10 +1,4 @@
-*...F
-
-Pending: (Failures listed here are expected and do not affect your suite's status)
-
-  1) Weapon add some examples to (or delete) /Users/apple/Projects/rspec/spec/models/weapon_spec.rb
-     # Not yet implemented
-     # ./spec/models/weapon_spec.rb:4
+...F
 
 Failures:
 
@@ -15,8 +9,8 @@ Failures:
        undefined method `weapons' for #<Zombie id: nil, name: "Ash", created_at: nil, updated_at: nil>
      # ./spec/models/zombie_spec.rb:25:in `block (2 levels) in <top (required)>'
 
-Finished in 0.06256 seconds (files took 4.25 seconds to load)
-5 examples, 1 failure, 1 pending
+Finished in 0.10342 seconds (files took 4.97 seconds to load)
+4 examples, 1 failure
 
 Failed examples:
 
