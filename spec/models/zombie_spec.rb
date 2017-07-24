@@ -19,4 +19,9 @@ RSpec.describe Zombie, type: :model do
     expect(zombie.tweets).to include(tweet1)
     expect(zombie.tweets).to include(tweet2)
   end
+
+  it 'starts with two weapons' do
+    zombie = Zombie.new(name: 'Ash')
+    zombie.should have(2).weapons
+  end
 end
