@@ -22,6 +22,6 @@ RSpec.describe Zombie, type: :model do
 
   it 'starts with two weapons' do
     zombie = Zombie.new(name: 'Ash')
-    zombie.should have(2).weapons
+    expect(zombie.weapons.size).to eq(2)
   end
 end
