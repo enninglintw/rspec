@@ -16,7 +16,7 @@ RSpec.describe Zombie, type: :model do
     tweet2 = Tweet.new(status: 'Arrrrgggg')
     zombie = Zombie.new(name: 'Ash', tweets: [tweet1, tweet2])
 
-    zombie.tweets.should include(tweet1)
-    zombie.tweets.should include(tweet2)
+    expect(zombie.tweets).to include(tweet1)
+    expect(zombie.tweets).to include(tweet2)
   end
 end
