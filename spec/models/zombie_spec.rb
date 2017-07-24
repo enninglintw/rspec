@@ -8,6 +8,6 @@ RSpec.describe Zombie, type: :model do
 
   it "has a name that matches 'Ash Clone'" do
     zombie = Zombie.new(name: "Ash Clone 1")
-    zombie.name.should match(/Ash Clone \d/)
+    expect(zombie.name).to match(/Ash Clone \d/)
   end
 end
