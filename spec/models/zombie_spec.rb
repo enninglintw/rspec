@@ -44,4 +44,9 @@ RSpec.describe Zombie, type: :model do
     zombie = Zombie.new
     expect(zombie.weapons.size).to be_within(3).of(5)
   end
+
+  it 'satisfys that weapon size equals to 2' do
+    zombie = Zombie.new
+    expect(zombie).to satisfy { |zombie| zombie.weapons.size == 2 }
+  end
 end
