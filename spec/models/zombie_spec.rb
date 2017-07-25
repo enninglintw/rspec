@@ -39,4 +39,9 @@ RSpec.describe Zombie, type: :model do
     zombie = Zombie.new
     expect(zombie).to respond_to(:name)
   end
+
+  it 'starts with weapons between (5-3) to (5+3)' do
+    zombie = Zombie.new
+    expect(zombie.weapons.size).to be_within(3).of(5)
+  end
 end
