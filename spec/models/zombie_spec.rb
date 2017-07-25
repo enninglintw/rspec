@@ -54,4 +54,9 @@ RSpec.describe Zombie, type: :model do
     zombie = Zombie.new
     expect(zombie).to be_kind_of(Zombie)
   end
+
+  it 'has name and it is an instance of string' do
+    zombie = Zombie.new(name: 'Ash')
+    expect(zombie.name).to be_an_instance_of(String)
+  end
 end
