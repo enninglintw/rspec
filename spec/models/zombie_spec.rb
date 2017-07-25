@@ -34,4 +34,9 @@ RSpec.describe Zombie, type: :model do
     zombie = Zombie.new
     expect { zombie.save! }.to raise_error(ActiveRecord::RecordInvalid)
   end
+
+  it 'responds to name' do
+    zombie = Zombie.new
+    expect(zombie).to respond_to(:name)
+  end
 end
