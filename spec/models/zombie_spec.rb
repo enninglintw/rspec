@@ -49,4 +49,9 @@ RSpec.describe Zombie, type: :model do
     zombie = Zombie.new
     expect(zombie).to satisfy { |zombie| zombie.weapons.size == 2 }
   end
+
+  it 'is a kind of zombie' do
+    zombie = Zombie.new
+    expect(zombie).to be_kind_of(Zombie)
+  end
 end
