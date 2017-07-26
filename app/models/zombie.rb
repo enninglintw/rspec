@@ -6,6 +6,10 @@ class Zombie < ApplicationRecord
 
   validates :name, presence: true
 
+  def exists?
+    true
+  end
+
   private
 
   def create_two_weapons
