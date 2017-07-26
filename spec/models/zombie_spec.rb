@@ -59,4 +59,9 @@ RSpec.describe Zombie, type: :model do
     zombie = Zombie.new(name: 'Ash')
     expect(zombie.name).to be_an_instance_of(String)
   end
+
+  it 'exists' do
+    zombie = Zombie.new
+    expect(zombie).to exist
+  end
 end
